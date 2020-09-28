@@ -1,14 +1,15 @@
 # Terraflops Terraform Module
  
-### Module name
+### AWS Route53 Hosted Zone
+Creates a Hosted Zone in AWS Route53
 
-Insert module description
 
 #### Example usage
 
 ```hcl-terraform
-module "example" {
-  source = "git::https://github.com/TerraFlops/module-name?ref=v1.0"
-  ...
+module "yourdomain" {
+  source = "git::https://github.com/TerraFlops/aws-route53-hosted-zone?ref=v1.0"
+  domain_name = "yourdomain.com"
+  comment = "yourdomain.com hosted zone"
 }
 ```
